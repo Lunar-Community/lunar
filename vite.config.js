@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
-  base: '/lunar-website/', // 👈 Updated for Lunar bot website
+  base: '/', // 👈 Fixed for proper deployment
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
