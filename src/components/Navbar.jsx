@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 
 const navItems = [
   { name: "About", href: "about" },
+  { name: "Stats", href: "detailed-stats" },
   { name: "Groups", href: "groups" },
   { name: "Rules", href: "rules" },
   { name: "How to Add Bot", href: "how-to-add-bot" },

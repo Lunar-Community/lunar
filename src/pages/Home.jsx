@@ -2,6 +2,7 @@ import { Navbar } from "../components/Navbar";
 import { StarBackground } from "../components/StarBackground";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
+import { DetailedStatsSection } from "../components/DetailedStatsSection";
 import { GroupsSection } from "../components/GroupsSection";
 import { RulesSection } from "../components/RulesSection";
 import { HowToAddBotSection } from "../components/HowToAddBotSection";
@@ -20,6 +21,7 @@ export const Home = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <DetailedStatsSection />
         <GroupsSection />
         <RulesSection />
         <HowToAddBotSection />

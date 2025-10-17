@@ -1,3 +1,5 @@
+import { StatsDisplay } from './StatsDisplay';
+
 export const HeroSection = () => {
   return (
     <section
@@ -14,15 +16,8 @@ export const HeroSection = () => {
         </h1>
 
         {/* Statistics Section */}
-        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex gap-16">
-          <div className="text-center">
-            <div className="text-white text-sm mb-1">Total Users:</div>
-            <div className="text-white text-2xl font-bold">TBD</div>
-          </div>
-          <div className="text-center">
-            <div className="text-white text-sm mb-1">Total Groups:</div>
-            <div className="text-white text-2xl font-bold">TBD</div>
-          </div>
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
+          <StatsDisplay />
         </div>
       </div>
     </section>
