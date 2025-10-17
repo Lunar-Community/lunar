@@ -1,7 +1,8 @@
 // API Configuration
 export const API_CONFIG = {
   // Change this to your actual API endpoint
-  BASE_URL: 'http://localhost:3000',
+  // Using your computer's IP address for mobile access
+  BASE_URL: 'http://172.20.10.4:3000',
   
   // API endpoints
   ENDPOINTS: {

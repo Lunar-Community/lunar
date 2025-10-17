@@ -21,6 +21,29 @@ export const useStats = () => {
     try {
       setStats(prev => ({ ...prev, loading: true, error: null }));
       
+      // Check if we're on mobile and localhost is not accessible
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      const isLocalhost = API_CONFIG.BASE_URL.includes('localhost');
+      
+      if (isMobile && isLocalhost) {
+        // On mobile with localhost, show TBD values
+        setStats({
+          totalUsers: 'TBD',
+          totalGroups: 'TBD',
+          totalWallet: 'TBD',
+          totalBank: 'TBD',
+          totalTokens: 'TBD',
+          totalMoonstones: 'TBD',
+          totalBots: 'TBD',
+          moderatorCount: 'TBD',
+          averagePerPlayer: 'TBD',
+          lastUpdated: null,
+          loading: false,
+          error: null
+        });
+        return;
+      }
+      
       // Use configured API endpoint
       const response = await fetch(getStatsUrl(), {
         method: 'GET',
