@@ -15,12 +15,6 @@ export const ModsSection = () => {
       role: "Moderator 2", 
       avatar: "./Hoshino.jpg",
       whatsapp: "https://wa.me/917059804980"
-    },
-    {
-      name: "Sujal Biswas",
-      role: "Moderator 3",
-      avatar: "./sujal.jpeg",
-      whatsapp: "https://wa.me/919831508801"
     }
   ];
 
